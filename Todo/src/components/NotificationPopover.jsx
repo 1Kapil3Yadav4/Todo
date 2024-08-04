@@ -30,7 +30,7 @@ const NotificationPopover = () => {
 
   return (
     <div>
-      <button onClick={togglePopover}>Notifications</button>
+      <button onClick={togglePopover}>Notification</button>
       {isOpen && (
         <div className="popover">
           {notifications.length > 0 ? (
