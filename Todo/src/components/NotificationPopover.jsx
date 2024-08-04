@@ -11,7 +11,8 @@ const NotificationPopover = () => {
       try {
         // Initialize Suprsend
         const suprsend = new window.Suprsend({
-          workspaceKey: import.meta.env,
+            workspaceKey: import.meta.env.VITE_SUPRSEND_WORKSPACE_KEY,
+            apiKey: import.meta.env.VITE_SUPRSEND_API_KEY,
         });
 
         const response = await suprsend.getNotifications();
@@ -30,7 +31,7 @@ const NotificationPopover = () => {
 
   return (
     <div>
-      <button onClick={togglePopover}>Notifications</button>
+      <button onClick={togglePopover}>Notification</button>
       {isOpen && (
         <div className="popover">
           {notifications.length > 0 ? (
