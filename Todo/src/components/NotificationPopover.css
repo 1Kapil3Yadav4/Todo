@@ -1,0 +1,27 @@
+/* src/components/NotificationPopover.css */
+.popover {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .popover ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .popover li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .popover li:last-child {
+    border-bottom: none;
+  }
+  
