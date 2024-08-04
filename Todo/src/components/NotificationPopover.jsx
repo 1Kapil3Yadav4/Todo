@@ -11,8 +11,8 @@ const NotificationPopover = () => {
       try {
         // Initialize Suprsend
         const suprsend = new window.Suprsend({
-          workspaceKey: 'YOUR_WORKSPACE_KEY',
-          apiKey: 'YOUR_API_KEY',
+          workspaceKey: 'SUPRSEND_WORKSPACE_KEY',
+          apiKey: 'SUPRSEND_WORKSPACE_SECRET',
         });
 
         const response = await suprsend.getNotifications();
