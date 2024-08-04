@@ -12,7 +12,6 @@ const NotificationPopover = () => {
         // Initialize Suprsend
         const suprsend = new window.Suprsend({
           workspaceKey: 'ls0Ue4g9RYZTxHYfwjxI',
-          apiKey: 'SS.WSS.ZYZ3atcdwa1ncxCPX8qGO0b1ZHO_PUYIdypvXAaM',
         });
 
         const response = await suprsend.getNotifications();
